@@ -1,0 +1,29 @@
+.hero {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel img {
+  width: 400px;   /* adjust size */
+  height: 250px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+/* Infinite animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

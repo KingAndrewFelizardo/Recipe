@@ -1,0 +1,31 @@
+.id{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    background: red;
+}
+
+.id .container{
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 160px;
+    background: gainsboro;
+    border-radius: 10px;
+}
+
+.id .img{
+    width: 35%;
+}
+
+.id .img img{
+    height: 100%;
+    width: 100%;
+}
+
+.id .detail{
+    width: 60%;
+    padding: 5px;
+}
