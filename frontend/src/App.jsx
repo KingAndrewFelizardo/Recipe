@@ -8,7 +8,7 @@ import Footers from './components/footers/footers'
 import Warning from "../src/components/warning/warning"
 
 import Login from './components/login/login';
-import Register from './components/register/register';
+import Register from './components/register/register'
 
 import Home from '../src/pages/home/home'
 import Post from '../src/pages/post/post'
@@ -33,11 +33,14 @@ const { login } = useContext(AuthContext);
         {login ?(
           <Route path='/post' element={<Post/>}/>
         ):(
-           <Route path='/post' element={<Login/>}/>
-          // <Route path='/post' element={<Warning warning={"You Must Login First to Post"}/>}/>
+          <Route path='/post' element={<Warning warning={"You Must Login First to Post"}/>}/>
         )}
         <Route path='/recipe' element={<Recipe/>}/>
         <Route path='/account' element={<Account/>}/>
+
+
+        <Route path='/register' element={<Register/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
       <Footers/>
     </div>

@@ -10,19 +10,21 @@
 .navbar ul{
     list-style: none;
     margin: 0;
-    padding: 0;
     display: flex;
     gap: 1rem;
 }
 
 .navbar a{
-    height: 100%;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
     display: flex;
     align-items: center;
     text-decoration: none;
     color: inherit;
 }
 
-.navbar h1{
-    font-size: 2rem;
+.navbar a:hover{
+    background-color: orangered;
+    font-weight: 900;
 }
